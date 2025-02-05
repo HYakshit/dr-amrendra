@@ -3,7 +3,7 @@
     background: #fff;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 20px;
+    margin: 80px;
     text-align: start; /* Center-align the content */
 }
 
@@ -11,11 +11,13 @@
     max-width: 1400px; /* Restrict the maximum width for responsiveness */
     margin: 0 auto;
     padding: 0 15px;
+  
     
 }
 
 .award-section-inner {
     margin: 0 auto;
+  
 }
 
 .award-section-heading {
@@ -44,7 +46,7 @@
 
 .award-section-image-list {
     display: inline-flex; /* Inline-flex to keep items in one row */
-    gap: 20px; /* Spacing between items */
+    gap: 10px; /* Spacing between items */
     padding: 0;
     margin: 0;
     white-space: nowrap; /* Prevent wrapping */
@@ -61,7 +63,7 @@
 
 .award-section-image-list li img {
     width: 100%; /* Make the image responsive */
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     /* border: 2px solid #ddd; */
     border-radius: 15px;

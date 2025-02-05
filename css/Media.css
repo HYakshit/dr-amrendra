@@ -1,11 +1,11 @@
 
-
+/* 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 
 
@@ -96,7 +96,7 @@
     flex-wrap: nowrap;
     gap: 10px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 100%;
 }
 
@@ -123,8 +123,8 @@
     }
     .logos-container {
         flex-wrap: nowrap;
-        gap: 30px;
-        margin-top: 40px;
+        gap: 25px;
+        margin-top: 20px;
         /* width: 100%; */
     }
 

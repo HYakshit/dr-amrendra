@@ -23,20 +23,20 @@
     width: 100%;
   }
   .patterns .cost-calculator-btn {
+    width: 55%;
     text-align: center;
-    margin: 0 auto;
-    
   }
   .patterns .cost-calculator-btn a {
-    width: 90%;
-    display: inline-block;
+  
+    display: block; 
+    width: 100%;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
     background-color: #d44346;
     border-radius: 54px;
-    line-height: 50px;
+    line-height: 70px;
     padding: 0 10px;
     text-align: center;
     font-size: 14px;
@@ -67,6 +67,8 @@
 
   .patterns-button-container{
    padding: 20px;
+   display: flex;
+   justify-content: center;
   }
   #calculator-section .radio-option {
     display: inline-block;
