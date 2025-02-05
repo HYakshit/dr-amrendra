@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.SmallNavBar {
+  display: none; /* Hidden by default */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 10px; 
+  /* flex-direction: column; */
+}
+.call, .number{
+  /* font-weight: bold; */
+  color: #e2dede;
+  padding-left: 2px;
+}
+.SmallNavBar-logo {
+  width: 130px;
+  height: auto;
+  margin-right: auto;
+
+  justify-items: center;
+  text-align: center;
+}
+
+.SmallNavBar-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.SmallNavBar-appointmentButton {
+  background-color: #d44346;
+  color: #fff;
+  width: 140px;
+  height: 35px;
+  border: none;
+  border-radius: 39px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem 6.3rem 40px 3rem;
+  width: 100%;
+  color: white;
+  z-index: 10;
+}
+
+/* .logo {
+  width: 179px;
+  height: 66px;
+  padding: 4px 0px;
+
+  text-align: center;
+  border-radius: 12px;
+}
+
+.logo-img {
+  width: 159px;
+  height: 51px;
+} */
+
+.navbar-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar-buttons a {
+  text-decoration: none;
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #555;
+}
+
+.navbar-button .icon {
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+
+#Book_Appointment_Big_device {
+  /* width: 209px; */
+
+  font-size: 10px;
+  background-color: #d44346;
+  color: white;
+  /* font-weight: bold; */
+  text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .SmallNavBar {
+    display: flex;
+  }
+}
+
+@media (max-width: 1020px) {
+  .navbar {
+    padding: 0.5% 6% 40px 3%;
+  }
+  .logo {
+    width: 12.5%; /* Adjust the width for screens below 1440px */
+    max-width: 179px; /* Max width stays the same */
+    height: auto;
+  }
+
+  .logo-img {
+    width: 87%; /* Adjust width of the image */
+    max-width: 159px;
+    height: 40px;
+  }
+  .navbar-button {
+    border-radius: 50px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+ 
+  #Book_Appointment_Big_device {
+    /* width: 209px; */
+
+    font-size: 10px;
+  }
+  .navbar-button .icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+
+  }
+}
+
+@media (min-width: 1021px) and (max-width: 1440px) {
+  .navbar {
+    padding: 3% 4% 40px;
+  }
+  .logo {
+    width: 12.5%; /* Adjust the width for screens below 1440px */
+    max-width: 179px; /* Max width stays the same */
+    height: auto;
+  }
+
+  .logo-img {
+    width: 87%; /* Adjust width of the image */
+    max-width: 159px;
+    height: 40px;
+  }
+
+  #Book_Appointment {
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-align: end;
+  }
+}
+
+@media (min-width: 1845px) and (max-width: 2800px) {
+  .navbar {
+    padding: 1% 6% 40px 2.5%;
+  }
+  .logo {
+    width: 16%;
+    height: auto;
+  }
+
+  .logo-img {
+    width: 87%;
+    height: auto;
+  }
+  .navbar-button {
+    border-radius: 50px;
+    padding: 12px 22px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  #Book_Appointment {
+    width: 20rem;
+    font-size: 1.8rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-align: end;
+  }
+  .navbar-button .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 10px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.dekstop-img {
+  display: flex;
+}
+.mobile-img {
+  display: none;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  /* height: auto;  */
+
+  object-fit: cover; /* Ensures the image fills the container */
+}
+
+.padding_Section {
+  padding: 70px 4rem 70px 6.5rem;
+}
+
+@media (max-width: 768px) {
+  .padding_Section {
+    padding: 30px 30px 30px 30px;
+  }
+  .dekstop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: flex;
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2900px) {
+  .padding_Section {
+    padding: 0% 15% 0% 15%;
+  }
+}

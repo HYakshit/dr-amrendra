@@ -1,0 +1,197 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.Media-title {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.Media-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 350px; /* Adjust the width of the border */
+    height: 3px; /* Adjust the thickness of the border */
+    background-color: #333; /* Match the color to your preference */
+    margin: 10px auto 0; /* Center the border and add spacing */
+}
+
+.articles-section {
+    background-color: #e2dede;
+    border-radius: 15px;
+    padding: 50px;
+    margin-inline: 35px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+
+.articles-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.articles-container::-webkit-scrollbar {
+    display: none;
+}
+
+.article-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* .logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-top: 40px; 
+   
+}
+
+
+
+.logo  {
+    object-fit: contain; 
+    border-radius: 10px; 
+    transition: filter 0.3s ease;
+} */
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.logo {
+    max-width: 150px; /* Maximum width */
+    max-height: 150px; /* Maximum height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the bounding box */
+    border-radius: 10px; /* Optional rounded corners */
+    transition: transform 0.3s ease; /* Optional: Add hover effects */
+}
+
+
+
+
+@media (min-width: 768px){
+    .article-card {
+        flex: 0 0 calc(33.333% - 14px);
+    }
+
+    .articles-container {
+        overflow-x: visible;
+    }
+    .logos-container {
+        flex-wrap: nowrap;
+        gap: 30px;
+        margin-top: 40px;
+        /* width: 100%; */
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+   
+}
+
+@media (max-width: 810px) {
+    .articles-section {
+        padding: 40px;
+    }
+    .logos-container {
+       
+       
+        flex-wrap: nowrap;
+        gap: 30px;
+        margin-top: 40px;
+        /* width: 100%; */
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .articles-section {
+        padding: 30px !important;
+    }
+    .logos-container {
+       
+       
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* width: 100%; */
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    .Media-title {
+        
+        font-size: 18px;
+        color: #333;
+       
+    }
+    .Media-title::after {
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 140px; /* Adjust the width of the border */
+        height: 3px; /* Adjust the thickness of the border */
+        background-color: #333; /* Match the color to your preference */
+        margin: 10px auto 0; /* Center the border and add spacing */
+    }
+    .articles-section {
+        background-color: #e2dede;
+        border-radius: 15px;
+        padding: 50px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+}

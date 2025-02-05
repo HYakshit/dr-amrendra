@@ -1,0 +1,360 @@
+.vt-section {
+  padding: 60px 0;
+  background: #e2dede;
+}
+
+.vt-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.vt-inner {
+  text-align: center;
+}
+
+.vt-heading {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.vt-heading-text {
+  font-size: 35px;
+  color: black;
+  background: #e2dede;
+  padding: 0 30px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+
+.vt-heading-line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: black;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.vt-slider {
+  position: relative;
+  margin: 0 -15px;
+}
+
+.vt-wrapper {
+  overflow: hidden;
+}
+
+.vt-list {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+
+.vt-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+
+/* Desktop View */
+@media (min-width: 993px) {
+  .vt-nav {
+    display: none;
+  }
+
+  .vt-list {
+    justify-content: center;
+    transform: none !important;
+  }
+
+  .vt-item {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+
+  .vt-wrapper {
+    overflow: visible;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 992px) {
+  .vt-nav {
+    display: flex;
+  }
+
+  .vt-slider {
+    padding: 0 40px;
+  }
+
+  .vt-item {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .vt-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.vt-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vt-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vt-play::after {
+  content: "";
+  border-left: 20px solid #000;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 4px;
+}
+
+.vt-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.vt-nav {
+  width: 36px;
+  height: 36px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.vt-nav-prev {
+  left: 0;
+}
+
+.vt-nav-next {
+  right: 0;
+}
+.vt-nav {
+  display: none; /* Hide by default */
+  width: 25px;
+  height: 25px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* Desktop View */
+@media (min-width: 993px) {
+  .vt-slider {
+    padding: 0 !important; /* Remove padding on desktop */
+  }
+
+  .vt-list {
+    justify-content: center;
+    transform: none !important;
+  }
+
+  .vt-item {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+
+  .vt-wrapper {
+    overflow: visible;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 992px) {
+  .vt-nav {
+    display: flex; /* Show arrows only on tablet and below */
+  }
+
+  .vt-slider {
+    padding: 0 40px;
+  }
+
+  .vt-item {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
+
+.vt-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.vt-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.vt-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+/* Desktop View */
+@media (min-width: 993px) {
+  .vt-nav {
+    display: none;
+  }
+
+  .vt-slider {
+    padding: 0 !important;
+  }
+
+  .vt-list {
+    gap: 30px;
+    justify-content: center;
+    transform: none !important;
+  }
+
+  .vt-item {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+
+  .vt-wrapper {
+    overflow: visible;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 992px) {
+  .vt-nav {
+    display: flex;
+  }
+
+  .vt-slider {
+    padding: 0 40px;
+  }
+
+  .vt-list {
+    gap: 30px;
+  }
+
+  .vt-item {
+    flex: 0 0 calc(50% - 15px);
+    width: calc(50% - 15px);
+  }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .vt-list {
+    gap: 0; /* Remove gap for full-width slides */
+  }
+
+  .vt-item {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+/* Mobile View */
+@media (max-width: 576px) {
+  .vt-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.vt-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Remove play button styles since video has native controls */
+.vt-play {
+  display: none;
+}
+
+/* Adjust video controls styling */
+.vt-item video::-webkit-media-controls {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vt-item video::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width:450px) {
+    .vt-heading-text {
+        font-size: 20px;
+        color: black;
+        background: #e2dede;
+        padding: 0 30px;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+      }
+     
+  }
+
+  

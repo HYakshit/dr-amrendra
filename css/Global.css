@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.list-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+.pt-1 {
+  padding-top: 10px;
+}
+.pb-1 {
+  padding-bottom: 10px;
+}
+.pl-1 {
+  padding-left: 10px;
+}
+.pr-1 {
+  padding-right: 10px;
+}
+
+.px-1 {
+  padding: 0 10px;
+}
+.py-1 {
+  padding: 10px 0;
+}
+.px-2 {
+  padding: 0 20px;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.px-3 {
+  padding: 0 30px;
+}
+.py-3 {
+  padding: 30px 0;
+}
+.px-4 {
+  padding: 0 40px;
+}
+.py-4 {
+  padding: 40px 0;
+}
+.px-5 {
+  padding: 0 50px;
+}
+.py-5 {
+  padding: 50px 0;
+}
+.px-6 {
+  padding: 0 60px;
+}
+.py-6 {
+  padding: 60px 0;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.mb-3 {
+  margin-bottom: 30px;
+}
+.mb-4 {
+  margin-bottom: 40px;
+}
+.mb-5 {
+  margin-bottom: 50px;
+}
+.mb-6 {
+  margin-bottom: 60px;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-4 {
+  margin-top: 40px;
+}
+.mt-5 {
+  margin-top: 50px;
+}
+.mt-6 {
+  margin-top: 60px;
+}
+
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-full {
+  width: 100%;
+}
+
+.col-gap-10 {
+  column-gap: 10px;
+}
+.col-gap-20 {
+  column-gap: 20px;
+}
+.col-gap-30 {
+  column-gap: 30px;
+}
+
+.button-primary {
+  border-radius: 6px;
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 40px;
+  background-color: #e39482;
+  color: #fff;
+  text-decoration: none;
+}
+.line-height-40 {
+  line-height: 40px;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.container {
+  max-width: 100%;
+  /* padding: 0 20px; */
+}
+.main-content {
+  background-color: #fff;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+
+.static-content {
+  padding: 50px 0;
+}
+.static-content h2 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+.static-content h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+
+/*------ Techniques -------*/
+
+/*-------- Patterns ---------*/
+
+/*---------- Enquiry Section --------*/
+
+/*--------- Video Testimonials Section -----*/
+
+
+
+
+body.thankyou {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: transparent;
+}
+body.thankyou .logo {
+  display: block;
+  margin: auto;
+}
+
+.radio-option.error input[type="radio"] {
+  border: 2px solid red;
+}
+
+.radio-option.error label {
+  color: white;
+}
+
+/* Styling for error message */
+#error-message {
+  text-align: center;
+  display: none; /* Hidden by default */
+  margin-top: 10px;
+}
+
+#error-message p {
+  font-size: 14px;
+  color: #d44346;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 40px;
+  background-color: #fff;
+  border: 1px solid #333;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px 20px;
+}

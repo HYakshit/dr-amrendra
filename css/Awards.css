@@ -1,0 +1,101 @@
+.award-section {
+    padding: 3rem 0;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: start; /* Center-align the content */
+}
+
+.award-section-container {
+    max-width: 1400px; /* Restrict the maximum width for responsiveness */
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.award-section-inner {
+    margin: 0 auto;
+}
+
+.award-section-heading {
+    color: #202020;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.award-section-carousel {
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    border-radius: 8px;
+    padding: 10px;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.award-section-scroll-area {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items remain in a single row */
+    gap: 30px; /* Add consistent spacing between items */
+    justify-content: start; /* Align items to the start of the container */
+}
+
+.award-section-image-list {
+    display: inline-flex; /* Inline-flex to keep items in one row */
+    gap: 20px; /* Spacing between items */
+    padding: 0;
+    margin: 0;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.award-section-image-list li {
+    display: inline-block; /* Inline-block to keep items aligned */
+    text-align: center;
+    /* max-width: 300px; */
+    width: 100%; /* Ensure the width is responsive */
+    max-width: 400px; 
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.award-section-image-list li img {
+    width: 100%; /* Make the image responsive */
+    max-width: 300px;
+    height: auto;
+    /* border: 2px solid #ddd; */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.award-section-title {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 780px) {
+    .award-section-scroll-area {
+        justify-content: flex-start; /* Align items to the start for horizontal scrolling */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth touch scrolling */
+        scroll-snap-type: x mandatory; /* Enable snapping behavior */
+    }
+
+    .award-section-image-list {
+        display: flex; /* Switch to flexbox for scrolling */
+        gap: 20px;
+        width: 100%; /* Ensure the list takes full width */
+    }
+
+    .award-section-image-list li {
+        flex: 0 0 100%; /* Ensure each card takes up 100% of the container width */
+        scroll-snap-align: start; /* Snap to the start of each image */
+    }
+}
+
+@media (max-width: 480px) {
+    .award-section-image-list li {
+        flex: 0 0 90%; /* Increase card size for smaller screens */
+    }
+}
