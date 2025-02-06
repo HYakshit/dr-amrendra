@@ -57,7 +57,7 @@
     text-align: center;
     /* max-width: 300px; */
     width: 100%; /* Ensure the width is responsive */
-    max-width: 400px; 
+    max-width: 320px; 
     flex-shrink: 0; /* Prevent shrinking */
 }
 

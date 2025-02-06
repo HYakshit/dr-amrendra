@@ -23,7 +23,7 @@
   width: 100%;
 }
 .patterns .cost-calculator-btn {
-  width: 55%;
+  width: 50%;
   text-align: center;
 }
 .patterns .cost-calculator-btn a {
@@ -38,7 +38,7 @@
   line-height: 70px;
   padding: 0 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 25px;
   display: block;
   letter-spacing: normal;
 }

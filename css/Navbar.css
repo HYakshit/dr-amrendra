@@ -49,6 +49,7 @@
 }
 
 .navbar {
+  /* padding-to: 15px; */
   display: flex;
   position: absolute;
   justify-content: end;
