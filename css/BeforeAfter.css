@@ -164,12 +164,18 @@
 }
 
 @media (max-width: 767px) {
+    .before-after-section {
+        padding: 30px 5px;
+        /* background: #f4f4f4; */
+    }
+    
     .before-after-list {
         flex-wrap: nowrap;
     }
 
     .before-after-item {
         flex: 0 0 100%;
+        padding-inline:3px ;
         max-width: 100%;
     }
 

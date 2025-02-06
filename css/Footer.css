@@ -286,6 +286,10 @@ footer {
 
 /* Devices smaller than 768px */
 @media (max-width: 768px) {
+  .footer-contact-info{
+    margin-left:0 ;
+    padding-left: 0;
+  }
   .SmallFooter {
     display: flex !important;
   }
@@ -295,12 +299,16 @@ footer {
   .footer-right {
     display: none;
   }
+  .contact-btn {
+    margin-bottom: 2vh;
+  }
 
   footer {
     padding: 30px 30px 30px 3rem;
   }
 
   .footer-container {
+    padding: 5px;
     flex-direction: column; /* Stack in column */
     align-items: center;
     justify-content: center;

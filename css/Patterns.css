@@ -1,160 +1,162 @@
 .patterns {
-    padding: 40px 0;
-  }
+  padding: 40px 0;
+}
 
-  /* .hide-desktop {
+/* .hide-desktop {
     display: block !important;
   }
   .hide-mobile {
     display: none !important;
   } */
-  .patterns .inner-section-mobile {
-    margin-bottom: 30px;
-  }
-  .patterns .inner-section {
-    border-radius: 15px;
-    border: 2px solid #d44346;
-    padding: 5px;
-    margin-inline:60px;
-    margin-bottom: 30px;
-  }
-  .patterns .inner-section img,
-  .patterns .inner-section-mobile img {
-    width: 100%;
-  }
-  .patterns .cost-calculator-btn {
-    width: 55%;
-    text-align: center;
-  }
+.patterns .inner-section-mobile {
+  margin-bottom: 30px;
+}
+.patterns .inner-section {
+  border-radius: 15px;
+  border: 2px solid #d44346;
+  padding: 5px;
+  margin-inline: 60px;
+  margin-bottom: 30px;
+}
+.patterns .inner-section img,
+.patterns .inner-section-mobile img {
+  width: 100%;
+}
+.patterns .cost-calculator-btn {
+  width: 55%;
+  text-align: center;
+}
+.patterns .cost-calculator-btn a {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d44346;
+  border-radius: 54px;
+  line-height: 70px;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  letter-spacing: normal;
+}
+
+#calculator-section {
+  background: #d44346;
+  border-radius: 20px;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+#calculator-section h3 {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.patterns-button-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+#calculator-section .radio-option {
+  display: inline-block;
+  text-align: center;
+}
+#calculator-section .radio-option input[type="radio"] {
+  display: none;
+}
+#calculator-section .radio-option label {
+  display: block;
+  cursor: pointer;
+  border: 5px solid transparent;
+  border-radius: 25px;
+}
+#calculator-section .radio-option input[type="radio"]:checked + label {
+  border-color: #000;
+  filter: drop-shadow(0px 0px 10px #000);
+}
+#calculator-section .radio-option label img {
+  width: 62px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.grades {
+  margin-bottom: 20px;
+}
+#calculator-section input[type="text"],
+#calculator-section input[type="tel"] {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 5px 10px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  margin: 0 0px 30px;
+  line-height: 30px;
+  width: calc(100% - 20px);
+}
+#calculator-section .input-fields {
+  text-align: center;
+}
+
+#submit-btn {
+  background: url(../images/btn-submit.png) 0 0 no-repeat;
+  width: 166px;
+  height: 49px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: -0em;
+}
+
+@media (max-width: 400px) {
   .patterns .cost-calculator-btn a {
-  
-    display: block; 
-    width: 100%;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
     background-color: #d44346;
     border-radius: 54px;
-    line-height: 70px;
+    line-height: 30px;
     padding: 0 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 10px;
     display: block;
     letter-spacing: normal;
   }
-  
-  #calculator-section {
-    background: #d44346;
-    border-radius: 20px;
-    padding: 30px 0;
-    margin-bottom: 40px;
-  }
-  #calculator-section h3 {
-    border: 1px solid #fff;
-    border-radius: 30px;
-    line-height: 40px;
-    margin-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 0 10px;
-    font-size: 15px;
-    margin: 0 0 20px;
-  }
-
-  .patterns-button-container{
-   padding: 20px;
-   display: flex;
-   justify-content: center;
-  }
-  #calculator-section .radio-option {
-    display: inline-block;
-    text-align: center;
-  }
-  #calculator-section .radio-option input[type="radio"] {
-    display: none;
-  }
-  #calculator-section .radio-option label {
-    display: block;
-    cursor: pointer;
-    border: 5px solid transparent;
-    border-radius: 25px;
-  }
-  #calculator-section .radio-option input[type="radio"]:checked + label {
-    border-color: #000;
-    filter: drop-shadow(0px 0px 10px #000);
-  }
-  #calculator-section .radio-option label img {
-    width: 62px;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-  }
-  
-  .grades {
-    margin-bottom: 20px;
-  }
-  #calculator-section input[type="text"],
-  #calculator-section input[type="tel"] {
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 2px solid #fff;
-    border-radius: 40px;
-    padding: 5px 10px;
-    text-align: center;
-    color: #000;
-    font-size: 16px;
-    margin: 0 0px 30px;
-    line-height: 30px;
-    width: calc(100% - 20px);
-  }
-  #calculator-section .input-fields {
-    text-align: center;
-  }
-  
-  #submit-btn {
-    background: url(../images/btn-submit.png) 0 0 no-repeat;
-    width: 166px;
-    height: 49px;
-    border: 1px solid #fff;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: -0em;
-  }
-  
-
-  @media (max-width: 400px) {
-    .patterns .cost-calculator-btn a {
-        text-transform: uppercase;
-        font-weight: bold;
-        text-decoration: none;
-        color: #fff;
-        background-color: #d44346;
-        border-radius: 54px;
-        line-height: 30px;
-        padding: 0 10px;
-        text-align: center;
-        font-size: 10px;
-        display: block;
-        letter-spacing: normal;
-      }
 }
 @media (max-width: 768px) {
-    .hide-desktop {
-        display: block !important;
-      }
-      .hide-mobile {
-        display: none !important;
-      }
+  .patterns .cost-calculator-btn {
+    width:85%;
+    text-align: center;
+  }
+  .hide-desktop {
+    display: block !important;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
 }
 
 @media (min-width: 768px) {
-    .hide-mobile {
-        display: block !important;
-      }
-      .hide-desktop {
-        display: none !important;
-      }
+  .hide-mobile {
+    display: block !important;
+  }
+  .hide-desktop {
+    display: none !important;
+  }
 }
