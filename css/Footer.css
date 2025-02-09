@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- }
- :root {
-  --footer-background:#444444;
-  --theme-red:#d44346;
- }
+}
+:root {
+  --footer-background: #444444;
+  --theme-red: #d44346;
+}
 .SmallFooter {
   display: flex !important;
   position: sticky;
@@ -132,11 +132,12 @@ footer {
 /* Right side: Contact Info */
 .footer-contact-info {
   flex: 1;
-  margin-left:40px ;
+  margin-left: 40px;
   padding: 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: start;
   padding-left: 20%;
 }
@@ -159,7 +160,7 @@ footer {
 
 .footer-contact-item {
   display: flex;
-  align-items: start;
+  align-items: center;
   font-size: 4px;
 }
 
@@ -170,7 +171,7 @@ footer {
 }
 
 .footer-contact-item span {
-  font-size: 0.5rem;
+  font-size: 1rem;
   text-align: start;
 }
 
@@ -187,7 +188,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 65px;
-  background-color:var(--theme-red);
+  background-color: var(--theme-red);
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -203,7 +204,7 @@ footer {
 }
 
 .company-name {
-  font-weight:500 ;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,7 +249,7 @@ footer {
 }
 .All_right_reserved {
   color: white;
-  margin-left:25px;
+  margin-left: 25px;
 }
 /* Responsive Styling */
 
@@ -289,12 +290,47 @@ footer {
     display: none !important;
   }
 }
+a {
+  text-decoration: none;
+  display: flex;
+}
 
 /* Devices smaller than 768px */
 @media (max-width: 768px) {
-  .footer-contact-info{
-    margin-left:0 ;
-    padding-left: 0;
+  .footer-right{
+    margin-top: 5px;
+  }
+  footer {
+    padding: 0px;
+  }
+  .footer{
+    padding: 0px;
+  }
+  .social-icon img {
+    width: 23px;
+    height: auto;
+  }
+  .footer-right {
+    margin: 16px;
+  }
+  .Stay_Tuned {
+    display: none;
+  }
+  .footer-contact-details {
+    gap: 8px;
+  }
+  .appointment-container {
+    align-items: normal;
+    margin-top: 6%;
+  }
+  .appointment-btn {
+    padding: 15px 10px;
+    font-size: 9px;
+    padding-left: 20px;
+  }
+  .footer-contact-info {
+    margin-left: 0;
+    padding-left: 8px;
   }
   .SmallFooter {
     display: flex !important;
@@ -303,14 +339,10 @@ footer {
     font-size: 1.2rem; /* Decreased font size */
   }
   .footer-right {
-    display: none;
+    /* display: none; */
   }
   .contact-btn {
-    margin-bottom: 2vh;
-  }
-
-  footer {
-    padding: 30px 30px 30px 3rem;
+    margin-bottom: 3vh;
   }
 
   .footer-container {
@@ -320,11 +352,10 @@ footer {
     justify-content: center;
   }
 
-
   .footer-contact-info {
     text-align: center;
+    margin-right: 35px;
   }
-
   .footer-bottom {
     flex-direction: column;
     text-align: center;
@@ -339,13 +370,13 @@ footer {
   }
 
   .company-logo {
-    width: 3vw;
-    height: 3vw;
+    width: 6vw;
+    height: 6vw;
     margin-right: 10px;
     border: 1px solid white;
     border-radius: 50%;
     object-fit: cover;
-    padding: 1px;
+    padding: 4px;
   }
 }
 
@@ -354,11 +385,11 @@ footer {
     margin: 0px;
   }
   .company-name {
-    font-size: 12px;
+    font-size: 15px;
   }
-  
-  footer {
-    padding: 20px 10px 10px 10px;
+
+  .footer{
+    padding: 0px;
   }
 
   .footer-contact-item {
@@ -374,7 +405,7 @@ footer {
   }
 
   .contact-btn {
-    font-size: 20px;
+    font-size: 15px;
   }
   .appointment-btn {
     width: 100%;

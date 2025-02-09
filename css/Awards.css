@@ -46,7 +46,7 @@
 
 .award-section-image-list {
     display: inline-flex; /* Inline-flex to keep items in one row */
-    gap: 10px; /* Spacing between items */
+    gap: 80px; /* Spacing between items */
     padding: 0;
     margin: 0;
     white-space: nowrap; /* Prevent wrapping */
@@ -55,20 +55,20 @@
 .award-section-image-list li {
     display: inline-block; /* Inline-block to keep items aligned */
     text-align: center;
-    /* max-width: 300px; */
+    max-width: 300px;
     width: 100%; /* Ensure the width is responsive */
-    max-width: 320px; 
+    max-width: 350px; 
     flex-shrink: 0; /* Prevent shrinking */
 }
 
 .award-section-image-list li img {
     width: 100%; /* Make the image responsive */
-    max-width: 250px;
-    padding: 4px;
+    /* max-width: 400px; */
+    padding: 8px;
     height: auto;
     /* border: 2px solid #ddd; */
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .award-section-title {
