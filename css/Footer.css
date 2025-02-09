@@ -320,6 +320,7 @@ footer {
     justify-content: center;
   }
 
+
   .footer-contact-info {
     text-align: center;
   }
@@ -328,11 +329,12 @@ footer {
     flex-direction: column;
     text-align: center;
     height: auto;
+    margin: 0px;
     padding: 10px 0;
   }
 
   .footer-left {
-    font-size: 18px;
+    font-size: 10px;
     margin-bottom: 10px;
   }
 
@@ -348,6 +350,13 @@ footer {
 }
 
 @media (max-width: 540px) {
+  .footer-bottom {
+    margin: 0px;
+  }
+  .company-name {
+    font-size: 12px;
+  }
+  
   footer {
     padding: 20px 10px 10px 10px;
   }
