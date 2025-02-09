@@ -140,8 +140,20 @@
   }
 }
 @media (max-width: 768px) {
+  .patterns-button-container {
+    padding: 5px;
+  }
+  .patterns .cost-calculator-btn a {
+    line-height: 60px;
+    padding: 0px;
+    font-weight:100px;
+    font-size: 16px;
+  }
+  .patterns .inner-section-mobile {
+    margin:10px;
+  }
   .patterns .cost-calculator-btn {
-    width:85%;
+    width:90%;
     text-align: center;
   }
   .hide-desktop {

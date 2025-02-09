@@ -1,5 +1,6 @@
 :root {
    --grey:#edebeb;
+   --font-color:black;
   }
   
 .before-after-section {
@@ -8,6 +9,7 @@
 }
 
 .before-after-container {
+    overflow: hidden;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
@@ -48,12 +50,11 @@
 }
 
 .before-after-wrapper {
-    overflow: hidden;
+    overflow: visible;
     /* border: 2px solid #ddd; */
     border-radius: 10px;
     margin: 0 50px;
 }
-
 .before-after-list {
     display: flex;
     padding: 20px 0;
@@ -109,6 +110,7 @@
 }
 
 .before-after-nav {
+    margin-inline: 20px;
     width: 32px;
     height: 32px;
     background: white;
@@ -164,6 +166,16 @@
 }
 
 @media (max-width: 767px) {
+    
+.before-after-heading {
+  
+    margin-bottom: 0px;
+ 
+}
+    .circular-image{
+        width: 20vh;
+        height: auto;
+    }
     .before-after-section {
         padding: 30px 5px;
         /* background: #f4f4f4; */
@@ -183,7 +195,8 @@
         display: flex;
     }
     .before-after-heading-text{
-        font-size: 18px;
+        font-size: 20px;
+        padding:0px ;
     }
 }
 

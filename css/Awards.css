@@ -64,6 +64,7 @@
 .award-section-image-list li img {
     width: 100%; /* Make the image responsive */
     max-width: 250px;
+    padding: 4px;
     height: auto;
     /* border: 2px solid #ddd; */
     border-radius: 15px;
@@ -77,6 +78,12 @@
 }
 
 @media (max-width: 780px) {
+    .award-section{
+        margin: 30px;
+    }
+    .award-section-heading {
+        font-size: 12px;
+    }
     .award-section-scroll-area {
         justify-content: flex-start; /* Align items to the start for horizontal scrolling */
         overflow-x: auto; /* Enable horizontal scrolling */
