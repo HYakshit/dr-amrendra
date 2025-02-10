@@ -52,15 +52,19 @@
   /* padding-to: 15px; */
   display: flex;
   position: absolute;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
   padding: 1rem 6.3rem 40px 3rem;
   width: 100%;
   color: white;
   z-index: 10;
 }
-
-/* .logo {
+.right-navbar{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.logo {
   width: 179px;
   height: 66px;
   padding: 4px 0px;
@@ -72,9 +76,10 @@
 .logo-img {
   width: 159px;
   height: 51px;
-} */
+}
 
 .navbar-buttons {
+
   display: flex;
   gap: 1.5rem;
 }

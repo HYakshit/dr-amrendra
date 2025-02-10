@@ -39,16 +39,14 @@
 
 .techniques h3 {
   display: inline-block;
-  border-bottom: 2px solid #fff;
+  border-bottom: 4px solid #fff;
   text-transform: uppercase;
   margin-bottom: 40px;
   position: relative;
   color: #fff;
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
-  letter-spacing: 10px;
 }
-
 .techniques h3 span {
   padding-bottom: 10px;
 }
@@ -161,6 +159,9 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .techniques {
+    padding: 60px 10px;
+  }
   .list-none > li a {
     text-decoration: underline;
   }

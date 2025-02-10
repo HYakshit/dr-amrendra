@@ -237,7 +237,7 @@ footer {
 
 .social-icon img {
   width: 30px;
-  height:auto;
+  height: auto;
 }
 
 .Phone_number {
@@ -297,13 +297,19 @@ a {
 
 /* Devices smaller than 768px */
 @media (max-width: 768px) {
-  .footer-right{
+  .appointment-btn {
+    width: 555px;
+    flex-wrap: nowrap;
+    max-width: 283px;
+    font-size: 20px;
+  }
+  .footer-right {
     margin-top: 5px;
   }
   footer {
     padding: 0px;
   }
-  .footer{
+  .footer {
     padding: 0px;
   }
   .social-icon img {
@@ -385,7 +391,7 @@ a {
     font-size: 15px;
   }
 
-  .footer{
+  .footer {
     padding: 0px;
   }
 
@@ -405,10 +411,10 @@ a {
     font-size: 15px;
   }
   .appointment-btn {
-    width: 100%;
+    width: 555px;
     flex-wrap: nowrap;
-    max-width: 200px;
-    font-size: 12px;
+    max-width: 283px;
+    font-size: 20px;
   }
 
   .arrow-icon {

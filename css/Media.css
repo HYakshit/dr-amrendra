@@ -17,12 +17,13 @@
 }
 .container {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0px auto;
   overflow: hidden;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .Media-title {
+  font-weight: bold;
   text-align: center;
   font-size: 35px;
   color: black;
@@ -34,7 +35,7 @@
   content: "";
   display: block;
   width: 100%;
-  max-width: 350px; /* Adjust the width of the border */
+  max-width: 375px; /* Adjust the width of the border */
   height: 3px; /* Adjust the thickness of the border */
   background-color: #333; /* Match the color to your preference */
   margin: 10px auto 0; /* Center the border and add spacing */
@@ -43,7 +44,7 @@
 .articles-section {
   background-color: #e2dede;
   border-radius: 15px;
-  padding: 50px;
+  padding: 60px 50px;
   margin-inline: 35px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
@@ -127,7 +128,7 @@
   }
   .logos-container {
     flex-wrap: nowrap;
-    gap: 25px;
+    gap: 30px;
     margin-top: 20px;
     /* width: 100%; */
   }
@@ -140,9 +141,12 @@
 }
 
 @media (max-width: 810px) {
-    .media-bottom {
-   width: 100%;
-      }
+  .container {
+    padding: 20px 10px;
+  }
+  .media-bottom {
+    width: 100%;
+  }
   .articles-section {
     padding: 40px;
   }
@@ -176,7 +180,7 @@
     width: 65px;
   }
   .Media-title {
-    font-size: 22px;
+    font-size: 20px;
     color: var(--font-color);
   }
   .Media-title::after {
