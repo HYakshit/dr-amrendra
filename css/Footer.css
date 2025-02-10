@@ -189,7 +189,7 @@ footer {
   width: 100%;
   height: 65px;
   background-color: var(--theme-red);
-  padding: 0 15px;
+  padding: 10px 15px;
   box-sizing: border-box;
 }
 
@@ -236,8 +236,8 @@ footer {
 }
 
 .social-icon img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height:auto;
 }
 
 .Phone_number {
@@ -337,9 +337,6 @@ a {
   }
   .SmallFooter-text {
     font-size: 1.2rem; /* Decreased font size */
-  }
-  .footer-right {
-    /* display: none; */
   }
   .contact-btn {
     margin-bottom: 3vh;

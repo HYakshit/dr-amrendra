@@ -133,8 +133,8 @@
   }
 
   .logo {
-    height: 120px;
-    width: 120px;
+    height: auto;
+    width: 130px;
     padding-inline: 15px;
   }
 }

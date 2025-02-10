@@ -173,8 +173,8 @@
  
 }
     .circular-image{
-        width: 20vh;
-        height: auto;
+        max-width: 100px; /* Add a max width for larger screens */
+        max-height: 100px; 
     }
     .before-after-section {
         padding: 30px 5px;
