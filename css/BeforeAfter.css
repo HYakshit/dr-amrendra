@@ -4,12 +4,12 @@
   }
   
   .before-after-section {
-    padding: 15px 70px;
+    padding: 15px 115px;
     /* background: #f4f4f4; */
 }
 
 .before-after-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
@@ -74,7 +74,7 @@
     justify-content: center;
     background-color: var(--grey);
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 }
 
 .image-container {
@@ -86,8 +86,8 @@
     overflow: hidden;
     width: 20vw; /* Set width relative to viewport width */
     height: 20vw; /* Set height relative to viewport width for a perfect circle */
-    max-width: 120px; /* Add a max width for larger screens */
-    max-height: 120px; /* Add a max height for larger screens */
+    max-width: 130px; /* Add a max width for larger screens */
+    max-height: 130px; /* Add a max height for larger screens */
     display: flex;
     justify-content: center;
     align-items: center;

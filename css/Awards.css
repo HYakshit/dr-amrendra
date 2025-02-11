@@ -3,7 +3,7 @@
   background: #fff;
   border: 2px solid black;
   border-radius: 10px;
-  margin: 80px;
+  margin: 65px;
   text-align: start; /* Center-align the content */
 }
 
@@ -30,6 +30,7 @@
   overflow-x: visible;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
   border-radius: 8px;
+  margin-inline: 35px;
   padding: 10px;
   white-space: nowrap; /* Prevent wrapping */
 }
