@@ -159,6 +159,9 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .list-none {
+    gap: 35px;
+  }
   .techniques {
     padding: 60px 10px;
   }

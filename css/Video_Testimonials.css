@@ -12,13 +12,16 @@
 .vt-inner {
   text-align: center;
   margin-inline: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .vt-heading {
   position: relative;
   display: inline-block;
   margin-bottom: 40px;
-  width: 65%;
+  width: 90%;
 }
 
 .vt-heading-text {
@@ -41,6 +44,22 @@
   left: 0;
   z-index: 1;
   font-weight: bold;
+}
+.vt-item{
+  margin-inline:15px ;
+}
+.vt-heading {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.vt-heading::before,
+.vt-heading::after {
+  content: "";
+  flex-grow: 3;
+  border-top: 5px solid black; /* Change color as needed */
+  margin: 0 10px; /* Adjust spacing */
 }
 
 .vt-slider {
@@ -91,6 +110,10 @@
 
 /* Tablet View */
 @media (max-width: 992px) {
+  .vt-heading-text {
+    font-size: 15px;
+    padding: 0 6px;
+  }
   .vt-nav {
     display: flex;
   }
@@ -107,12 +130,47 @@
 
 /* Mobile View */
 @media (max-width: 576px) {
+  .vt-item{
+    margin-inline:10px ;
+  }
+  .vt-inner {
+    margin-inline: 5px;
+  }
+  .vt-heading {
+    margin-bottom: 22px;
+    width: 100%;
+  }
+  .vt-heading-text {
+    font-size: 15px;
+    padding: 0;
+  }
+  .vt-heading {
+    width: 100%;
+  }
   .vt-item {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
 
+@media (max-width: 450px) {
+  .vt-heading-text {
+    font-size: 18px;
+    color: black;
+    background: #e2dede;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+  }
+  .vt-heading::before,
+  .vt-heading::after {
+    content: "";
+    flex-grow: 3;
+    border-top: 4px solid black; /* Change color as needed */
+    margin: 0 5px; /* Adjust spacing */
+  }
+}
 .vt-thumbnail {
   width: 100%;
   height: 100%;
@@ -236,7 +294,7 @@
 }
 
 .vt-wrapper {
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
 }
 
@@ -290,8 +348,9 @@
   }
 
   .vt-slider {
-    padding: 0 40px;
+    padding: 0 30px;
   }
+
 
   .vt-list {
     gap: 30px;
@@ -328,7 +387,12 @@
   object-fit: cover;
   border-radius: 20px;
 }
+@media (max-width: 375px) {
+  .vt-heading-text {
+    font-size: 13px;
+  }
 
+}
 /* Remove play button styles since video has native controls */
 .vt-play {
   display: none;
@@ -342,19 +406,3 @@
 .vt-item video::-webkit-media-controls-panel {
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
-@media (max-width:450px) {
-    .vt-heading-text {
-        font-size: 20px;
-        color: black;
-        background: #e2dede;
-        font-weight: bold;
-        position: relative;
-        z-index: 2;
-        display: inline-block;
-      }
-     
-  }
-
-  

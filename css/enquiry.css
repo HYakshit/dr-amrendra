@@ -133,8 +133,9 @@
     background-color: #d44346;
     border-radius: 54px;
     line-height: 40px;
+    margin-inline: 30px;
     padding: 0 30px;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: normal;
     margin-bottom: 30px;
     text-align: center;

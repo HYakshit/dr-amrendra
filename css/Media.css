@@ -187,8 +187,8 @@
     content: "";
     display: block;
     width: 100%;
-    max-width: 140px; /* Adjust the width of the border */
-    height: 3px; /* Adjust the thickness of the border */
+    max-width: 200px; /* Adjust the width of the border */
+    height: 2px; /* Adjust the thickness of the border */
     background-color: #333; /* Match the color to your preference */
     margin: 10px auto 0; /* Center the border and add spacing */
   }
