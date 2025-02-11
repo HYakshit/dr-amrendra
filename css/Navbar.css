@@ -1,8 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 .SmallNavBar {
   display: none; /* Hidden by default */
@@ -230,10 +225,6 @@
     width: 2.5rem;
     margin-right: 10px;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
 }
 .dekstop-img {
   display: flex;
