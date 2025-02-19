@@ -217,7 +217,10 @@
         flex: 0 0 33.333%;
         max-width: 54.333%;
     }
-
+    .before-after-nav {
+        display: flex
+;
+    }
     /* .before-after-nav {
         display: flex; /* Ensure arrows are displayed in this range 
     } */
