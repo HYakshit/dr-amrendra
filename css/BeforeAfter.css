@@ -187,8 +187,12 @@
     }
 
     .before-after-item {
-        flex: 0 0 100%;
-        padding-inline:3px ;
+        flex: 0 0 75%;
+        padding-inline:3px;
+        max-width: 100%;
+    }   .before-after-item {
+        flex: 0 0 75%;
+        padding-inline:3px;
         max-width: 100%;
     }
 
@@ -199,6 +203,9 @@
         font-size: 20px;
         padding:0px ;
     }
+    .image-comparison{
+        max-width: 330px;
+    }
 }
 /* tablet */
 @media (min-width: 768px) and (max-width: 1100px) {
@@ -208,7 +215,7 @@
 
     .before-after-item {
         flex: 0 0 33.333%;
-        max-width: 33.333%;
+        max-width: 54.333%;
     }
 
     /* .before-after-nav {

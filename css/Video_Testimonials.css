@@ -211,7 +211,6 @@
 
 /* responsive */
 /* Desktop View */
-/* Desktop View */
 @media (min-width: 993px) {
   .vt-nav {
     display: none;
@@ -258,6 +257,12 @@
   .vt-list {
     gap: 30px;
   }
+}
+@media (min-width: 576px) and (max-width: 810px){
+  .vt-item {
+    flex: 0 0 calc(90% - 15px);
+    max-width: calc(90% - 15px);
+}
 }
 
 /* Mobile View */
