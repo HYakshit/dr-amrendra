@@ -108,6 +108,7 @@
 }
 
 /* Desktop styles (above 780px) */
+/* desktop */
 @media screen and (min-width: 780px) {
   .enquiry-section .inner-section {
     flex-direction: row;
@@ -120,11 +121,13 @@
     width: 48%;
   }
 }
+/* mobile */
 @media screen and (max-width: 786px) {
   .enquiry-section .inner-section {
     padding-inline: 10px;
   }
 }
+/* small mobile */
 @media screen and (max-width: 400px) {
   .enquiry-form h3 {
     text-transform: uppercase;

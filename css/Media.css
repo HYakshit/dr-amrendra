@@ -116,7 +116,7 @@
   border-radius: 10px; /* Optional rounded corners */
   transition: transform 0.3s ease; /* Optional: Add hover effects */
 }
-
+/* desktop */
 @media (min-width: 768px) {
   .article-card {
     flex: 0 0 calc(33.333% - 14px);
@@ -138,7 +138,7 @@
     padding-inline: 15px;
   }
 }
-
+/* tablet */
 @media (max-width: 810px) {
   .container {
     padding: 20px 10px;
@@ -161,7 +161,7 @@
     width: 80px;
   }
 }
-
+/* mobile */
 @media (max-width: 500px) {
   .articles-section {
     padding: 30px !important;

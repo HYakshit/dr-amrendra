@@ -139,6 +139,7 @@
 }
 
 /* Responsive Design */
+/* desktop */
 @media (min-width: 768px) {
     .before-after-list {
         flex-wrap: nowrap;
@@ -164,7 +165,7 @@
         margin: 0;
     }
 }
-
+/* mobile */
 @media (max-width: 767px) {
     
 .before-after-heading {
@@ -199,8 +200,7 @@
         padding:0px ;
     }
 }
-
-
+/* tablet */
 @media (min-width: 768px) and (max-width: 1100px) {
     .before-after-list {
         flex-wrap: nowrap;

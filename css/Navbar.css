@@ -44,7 +44,6 @@
 }
 
 .navbar {
-  /* padding-to: 15px; */
   display: flex;
   position: absolute;
   justify-content: start;
@@ -108,15 +107,35 @@
 }
 
 #Book_Appointment_Big_device {
-  /* width: 209px; */
-
   font-size: 10px;
   background-color: #d44346;
   color: white;
-  /* font-weight: bold; */
   text-align: center;
 }
+.dekstop-img {
+  display: flex;
+}
+.mobile-img {
+  display: none;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  /* height: auto;  */
+
+  object-fit: cover; /* Ensures the image fills the container */
+}
+
+.padding_Section {
+  padding: 70px 4rem 70px 6.5rem;
+}
+
 /* Responsive Design */
+/* tablet */
 @media (max-width: 768px) {
   .navbar {
     display: none;
@@ -124,8 +143,17 @@
   .SmallNavBar {
     display: flex;
   }
+  .padding_Section {
+    padding: 30px 30px 30px 30px;
+  }
+  .dekstop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: flex;
+  }
 }
-
+/* large tablet */
 @media (max-width: 1020px) {
   .navbar {
     padding: 0.5% 6% 40px 3%;
@@ -164,7 +192,7 @@
 
   }
 }
-
+/* desktop */
 @media (min-width: 1021px) and (max-width: 1440px) {
   .navbar {
     padding: 3% 4% 40px;
@@ -189,7 +217,7 @@
     text-align: end;
   }
 }
-
+/*large desktop */
 @media (min-width: 1845px) and (max-width: 2800px) {
   .navbar {
     padding: 1% 6% 40px 2.5%;
@@ -224,39 +252,6 @@
     height: 2.5rem;
     width: 2.5rem;
     margin-right: 10px;
-  }
-}
-.dekstop-img {
-  display: flex;
-}
-.mobile-img {
-  display: none;
-}
-.image-container {
-  position: relative;
-  width: 100%;
-}
-
-.image-container img {
-  width: 100%;
-  /* height: auto;  */
-
-  object-fit: cover; /* Ensures the image fills the container */
-}
-
-.padding_Section {
-  padding: 70px 4rem 70px 6.5rem;
-}
-
-@media (max-width: 768px) {
-  .padding_Section {
-    padding: 30px 30px 30px 30px;
-  }
-  .dekstop-img {
-    display: none;
-  }
-  .mobile-img {
-    display: flex;
   }
 }
 

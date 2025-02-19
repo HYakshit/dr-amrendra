@@ -122,23 +122,16 @@
   cursor: pointer;
   font-size: -0em;
 }
-
-@media (max-width: 400px) {
-  .patterns .cost-calculator-btn a {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    background-color: #d44346;
-    border-radius: 54px;
-    line-height: 30px;
-    padding: 0 10px;
-    text-align: center;
-    font-size: 10px;
-    display: block;
-    letter-spacing: normal;
+/* responsive */
+@media (min-width: 768px) {
+  .hide-mobile {
+    display: block !important;
+  }
+  .hide-desktop {
+    display: none !important;
   }
 }
+
 @media (max-width: 768px) {
   .patterns {
     padding: 40px 0px;
@@ -168,12 +161,19 @@
     display: none !important;
   }
 }
-
-@media (min-width: 768px) {
-  .hide-mobile {
-    display: block !important;
-  }
-  .hide-desktop {
-    display: none !important;
+@media (max-width: 400px) {
+  .patterns .cost-calculator-btn a {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d44346;
+    border-radius: 54px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 10px;
+    display: block;
+    letter-spacing: normal;
   }
 }

@@ -382,7 +382,7 @@ a {
     padding: 4px;
   }
 }
-
+/* mobile */
 @media (max-width: 540px) {
   .footer-bottom {
     margin: 0px;
@@ -430,22 +430,13 @@ a {
     height: 18px;
     color: #e69c88;
   }
-}
-
-@media (max-width: 480px) {
-  .SmallFooter {
-    display: flex !important; /* Show it on very small screens */
-  }
-}
-
-@media (max-width: 500px) {
   .SmallFooter {
     padding: 8px 0px;
   }
 
   .SmallFooter-icon {
     width: 20px; /* Decreased width */
-    height: 20px; /* Decreased height */
+    height: 20px;  /*Decreased height */
   }
 
   .SmallFooter-text {
@@ -454,5 +445,11 @@ a {
 
   .SmallFooter-divider {
     height: 30px; /* Adjusted divider height for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .SmallFooter {
+    display: flex !important; /* Show it on very small screens */
   }
 }
